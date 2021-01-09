@@ -1,0 +1,30 @@
+{% assign profile = site.data.data.profile %}
+{% if profile %}
+<section>
+    <div class="container-fluid">
+        <div class="card my-2 p-4 bg-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="row-sm">
+                            <img class="img-thumbnail rounded-circle" src="{{ site.baseurl }}/assets/images/{{ profile.avatar }}" alt="profile picture" />
+                        </div>
+                        <div class="row mt-4">
+                            <p class="h1">{{ profile.name }}</p>
+                            <p class="h4">{{ profile.profession }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4">
+                        <div class="row">
+                            <p class="h5">Contact Info</p>
+                            {%- include /data/contacts.html -%}
+                            <p class="h5">Follow Me</p>
+                            {%- include /data/social.html -%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

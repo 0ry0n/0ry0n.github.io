@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article>
+    <div class="container-fluid my-5">
+        <header>
+            <p class="h1">{{ page.title | escape }}</p>
+            <p class="h6 fst-italic">Creation Date:
+                <time datetime="{{ page.date }}">
+                {%- assign date_format = "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+                </time>
+              </p>
+              <p class="h6 fst-italic">Last update:
+                <time datetime="{{ page.last-update }}">
+                {{ page.last-update | date: date_format }}
+                </time>
+              </p>
+        </header>
+    
+        <div class="container-fluid my-5" id="main-post">
+            {{ content }}
+        </div>
+    
+        <footer>
+            <p class="h6 fw-bold">Category: <a class="text-decoration-none text-info" href="#">{{ page.categories }}</a></p>
+        </footer>
+    </div>
+</article>

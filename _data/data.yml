@@ -1,0 +1,198 @@
+profile:
+  name: Giuseppe Silvestro
+  avatar: avatar.png
+  profession: Computer Engineering Student
+
+contacts:
+  location: Italy
+  email: newgsdeveloper@gmail.com
+  phone: +39 392 69 57 689
+  website: 0ry0n.github.io
+
+social:
+  linkedin: 
+  github: 0ry0n
+  gitlab: 
+  stackoverflow: 
+  telegram: 
+  twitter: 
+
+languages:
+  - idiom: Italiano
+    level: Nativo
+    image: 🇮🇹
+
+  - idiom: Inglese
+    level: B1
+    image: 🇬🇧
+
+interests:
+  - item: Fai-Da-Te
+    info: 
+    link: 
+
+  - item: Automobilismo
+    info: 
+    link: 
+
+  - item: Nuoto
+    info: 
+    link: 
+
+  - item: Cucina
+    info: 
+    link: 
+
+  - item: Fotografia
+    info: 
+    link: 
+
+  - item: Musica
+    info: 
+    link: 
+
+education:
+  - degree: Diploma indirizzo "Chimica, Materiali e Biotecnologie" articolazione "Chimica e Materiali"
+    university: ITT Alatamura-da Vinci - Foggia
+    time: 2011 - 2016
+    info: Partecipazione al Progetto Di.Or. Didattica Orientata in Ambito Scientifico Percorso Progress/Advanced in qualità di studente ricercatore Di.Or. presso il Dipartimento di Scienze Agrarie, degli Alimenti e dell'Ambiente - UniFg.
+    link: https://www.ittaltamuradavinci.edu.it/j33/
+
+  - degree: Laurea Triennale in Ingegneria Informatica
+    university: Università di Bologna
+    time: 2016 - 2020
+    info: "Tesi: Performance di Piattaforme MOM in Ambito Industriale"
+    link: https://www.unibo.it/it
+
+career-profile:
+  summary: Fin'ora non ho avuto nessuna esperienza lavorativa.
+  roles:
+  #- role: ""
+  #  company: ""
+  #  link: ""
+  #  location: ""
+  #  time: ""
+  #  summary: ""
+
+projects:
+  - name: Resource_Monitor
+    description: Resource_Monitor is a Gnome Shell extension that Monitor the use of system resources like cpu, ram, disk, network and display them in gnome shell top bar.
+    link: https://github.com/0ry0n/Resource_Monitor
+    langs: JavaScript
+    image: https://raw.githubusercontent.com/0ry0n/Resource_Monitor/master/settings.png
+
+  - name: ESP32_LiquidCrystal_I2C_Library
+    description: Library for Liquid Crystal LCD displays Hitachi HD44780 (or a compatible) that use PCF8574 expander for the I2C bus.
+    link: https://github.com/0ry0n/ESP32_LiquidCrystal_I2C_Library
+    langs: C
+    image: 
+
+  - name: Custom_Terminal
+    description: Simple customization of the linux terminal.
+    link: https://github.com/0ry0n/Custom_Terminal
+    langs: Shell
+    image: 
+
+skills:
+  - programming-language:
+    - name: C
+      level: 80
+
+    - name: Java
+      level: 80
+
+    - name: C#
+      level: 70
+
+    - name: Kotlin
+      level: 75
+
+    - name: Javascript
+      level: 70
+
+    - name: Shell - Bash
+      level: 70
+
+    - name: HTML5 & CSS3
+      level: 80
+
+    - name: SQL
+      level: 75
+
+  - os:
+    - name: Windows
+      level: 90
+  
+    - name: Debian
+      level: 90
+
+    - name: Ubuntu
+      level: 90
+
+    - name: Kali-Linux
+      level: 80
+
+    - name: Raspbian
+      level: 85
+
+    - name: FreeRTOs
+      level: 50
+
+  - platforms:
+    - name: Arduino
+      level: 80
+
+    - name: Raspberry
+      level: 80
+
+    - name: Esp-32
+      level: 70
+  
+  - graphics:
+    - name: Premiere
+      level: 65
+
+    - name: Photoshop
+      level: 70
+
+    - name: Gimp
+      level: 70
+
+    - name: Blender
+      level: 50
+
+  - ide - text editor:
+    - name: Eclipse EE / Java / C++
+      level: 80
+
+    - name: Visual Studio
+      level: 70
+
+    - name: Visual Studio Code
+      level: 80
+
+    - name: Atom
+      level: 75
+
+  - others:
+    - name: VirtualBox
+      level: 90
+
+    - name: Git
+      level: 75
+
+    - name: MatLab
+      level: 40
+
+    - name: Wordpress
+      level: 90
+
+    - name: Jekyll
+      level: 80
+
+publications:
+#  - title: ""
+#    description: ""
+#    authors: ""
+#    conference: ""
+#    link: ""

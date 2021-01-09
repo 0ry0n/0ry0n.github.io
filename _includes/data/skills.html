@@ -1,0 +1,24 @@
+{% assign skills = site.data.data.skills %}
+{% if skills %}
+<section>
+    <div class="container-fluid">
+        {% for category in skills %}
+        {% for items in category %}
+        <div class="card my-2 bg-success">
+            <p class="h3 p-3 fw-bold text-capitalize text-white">{{ items[0] }}</p>
+            <ul class="list-group list-group-flush">
+                {% for item in items[1] %}
+                <li class="list-group-item bg-white">
+                    <p class="h5">{{ item.name }}</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: {{ item.level }}%" aria-valuenow="{{ item.level }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

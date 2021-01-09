@@ -1,0 +1,56 @@
+{% assign career-profile = site.data.data.career-profile %}
+{% if career-profile %}
+<section>
+    <div class="container-fluid">
+        <p class="h6">
+            {{ career-profile.summary }}
+        </p>
+        {% for role in career-profile.roles %}
+            <div class="card p-3 my-2 bg-light">
+                <div class="row">
+                    <p class="h3 my-auto">
+                        👔
+                        {{ role.role }}
+                    </p>
+                </div>
+                {% if role.company %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        🏢
+                        {% if role.link %}
+                        <a class="text-decoration-none text-info" href="{{ role.link }}" target="_blank">{{ role.company }}</a>
+                        {% else %}
+                            {{ role.company }}
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% if role.location %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        📍
+                        {{ role.location }}
+                    </div>
+                </div>
+                {% endif %}
+                {% if role.time %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        ⌛️
+                        {{ role.time }}
+                    </div>
+                </div>
+                {% endif %}
+                {% if role.summery %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        ℹ️
+                        {{ role.summary }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,140 @@
+{%- include /data/profile.html -%}
+{% assign item = site.data.data %}
+
+<div class="accordion accordion-flush" id="accordionCurriculum">
+    {% if item.education %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                🎓
+                <span class="ms-2 text-dark">Education</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/education.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.languages %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                🌍
+                <span class="ms-2 text-dark">Languages</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/languages.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.interests %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                👨‍🔬
+                <span class="ms-2 text-dark">Interests</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/interests.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.career-profile %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                🧑‍🔧
+                <span class="ms-2 text-dark">Career Profile</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/career-profile.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.skills %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                🔧
+                <span class="ms-2 text-dark">Skills</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/skills.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.projects %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                🧰
+                <span class="ms-2 text-dark">Projects</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/projects.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.publications %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                🔖
+                <span class="ms-2 text-dark">Publications</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/publications.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if item.social %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                <i class="fas fa-hashtag mb-1 text-dark"></i>
+                <span class="ms-2 text-dark">Social</span>
+            </button>
+        </h2>
+
+        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionCurriculum">
+            <div class="accordion-body">
+            {%- include /data/social.html -%}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>

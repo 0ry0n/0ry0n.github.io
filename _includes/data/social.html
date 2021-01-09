@@ -1,0 +1,50 @@
+{% assign social = site.data.data.social %}
+{% if social %}
+<section>
+    <div class="container-fluid">
+        <ul class="list-group list-group-flush">
+            {% if social.linkedin %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-linkedin"></i>
+                <a class="text-decoration-none ms-1 text-info" href="https://linkedin.com/in/{{ social.linkedin }}" target="_blank">{{ social.linkedin }}</a>
+            </li>
+            {% endif %}
+            
+            {% if social.github %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-github"></i>
+                <a class="text-decoration-none ms-1 text-info" href="https://github.com/{{ social.github }}" target="_blank">{{ social.github }}</a>
+            </li>
+            {% endif %}
+        
+            {% if social.gitlab %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-gitlab"></i>
+                <a class="text-decoration-none ms-1 text-info" href="http://gitlab.com/{{ social.gitlab }}" target="_blank">{{ social.gitlab }}</a>
+            </li>
+            {% endif %}
+
+            {% if social.stackoverflow %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-stack-overflow"></i>
+                <a class="text-decoration-none ms-1 text-info" href="https://stackoverflow.com/users/{{ social.stackoverflow }}" target="_blank">{{ social.stackoverflow }}</a>
+            </li>
+            {% endif %}
+        
+            {% if social.telegram %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-telegram"></i>
+                <a class="text-decoration-none ms-1 text-info" href="https://t.me/{{ social.telegram }}" target="_blank">{{ social.telegram }}</a>
+            </li>
+            {% endif %}
+
+            {% if social.twitter %}
+            <li class="list-group-item bg-white">
+                <i class="fab fa-twitter"></i>
+                <a class="text-decoration-none ms-1 text-info" href="https://twitter.com/{{ social.twitter }}" target="_blank">{{ social.twitter }}</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</section>
+{% endif %}

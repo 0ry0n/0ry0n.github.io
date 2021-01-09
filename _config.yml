@@ -1,0 +1,11 @@
+title: 0ry0n's Site
+author: Giuseppe Silvestro
+email: newgsdeveloper@gmail.com
+description: >-
+  Personal website
+baseurl: ""
+url: "https://0ry0n.github.io"
+
+# Build settings
+plugins:
+  - jekyll-feed

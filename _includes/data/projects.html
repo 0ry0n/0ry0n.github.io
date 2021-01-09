@@ -1,0 +1,38 @@
+{% assign projects = site.data.data.projects %}
+{% if projects %}
+<section>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for project in projects %}
+            <div class="col">
+                <div class="card h-100 border-0">
+                    {% if project.image %}
+                    <img src="{{ project.image }}" class="card-img-top w-auto m-auto h-50 mw-100" alt="{{ project.name }} image">
+                    {% else %}
+                    <img src="{{ site.baseurl }}/assets/images/project-management.png" class="card-img-top w-auto m-auto h-50 mw-100" alt="{{ project.name }} image">
+                    {% endif %}
+
+                    <div class="card-body bg-light d-flex flex-column">
+                        <p class="h5 card-title fw-bold">{{ project.name }}</p>
+
+                        {% if project.description %}
+                        <p class="card-text">{{ project.description }}</p>
+                        {% endif %}
+
+                        {% if project.langs %}
+                        <p class="card-text mt-auto">Language: {{ project.langs }}</p>
+                        {% endif %}
+
+                        {% if project.link %}
+                        <div class="text-end mb-0">
+                            <a href="{{ project.link }}" target="_blank" class="btn btn-primary">View more!</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

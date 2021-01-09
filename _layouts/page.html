@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="container-fluid my-5">
+
+    {%- if page.title -%}
+    <header class="mb-4">
+        <p class="h1">{{ page.title | escape }}</p>
+    </header>
+    {%- endif -%}
+
+    <div>
+        {{ content }}
+    </div>
+    
+</section>

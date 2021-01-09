@@ -1,0 +1,45 @@
+{% assign education = site.data.data.education %}
+{% if education %}
+<section>
+    <div class="container-fluid">
+        {% for graduation in education %}
+            <div class="card p-3 my-2 bg-light">
+                <div class="row">
+                    <p class="h3 my-auto">
+                        🧑‍🎓
+                        {{ graduation.degree }}
+                    </p>
+                </div>
+                {% if graduation.university %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        📍
+                        {% if graduation.link %}
+                        <a class="text-decoration-none text-info" href="{{ graduation.link }}" target="_blank">{{ graduation.university }}</a>
+                        {% else %}
+                            {{ graduation.university }}
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% if graduation.time %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        ⌛️
+                        {{ graduation.time }}
+                    </div>
+                </div>
+                {% endif %}
+                {% if graduation.info %}
+                <div class="row mt-1">
+                    <div class="my-auto">
+                        ℹ️
+                        {{ graduation.info }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

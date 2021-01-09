@@ -1,0 +1,19 @@
+{% assign languages = site.data.data.languages %}
+{% if languages %}
+<section>
+    <div class="container-fluid">
+        <ul class="list-group list-group-flush">
+            {% for language in languages %}
+            <li class="list-group-item bg-white">
+                {% if language.image %}
+                    {{ language.image }}
+                {% else %}
+                    🏳️
+                {% endif %}
+                <span>{{ language.idiom }} - {{ language.level }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,49 @@
+{% assign publications = site.data.data.publications %}
+{% if publications %}
+<section>
+    <div class="container-fluid">
+        {% for publication in publications %}
+        <div class="card p-3 my-2 bg-light">
+            <div class="row">
+                <p class="h3 my-auto">
+                    📜
+                    {{ publication.title }}
+                </p>
+            </div>
+            {% if publication.description %}
+            <div class="row mt-1">
+                <div class="my-auto">
+                    📖
+                    {{ publication.description }}
+                </div>
+            </div>
+            {% endif %}
+            {% if publication.authors %}
+            <div class="row mt-1">
+                <div class="my-auto">
+                    🧑‍💼
+                    {{ publication.authors }}
+                </div>
+            </div>
+            {% endif %}
+            {% if publication.conference %}
+            <div class="row mt-1">
+                <div class="my-auto">
+                    🏢
+                    {{ publication.conference }}
+                </div>
+            </div>
+            {% endif %}
+            {% if publication.link %}
+            <div class="row mt-1">
+                <div class="my-auto">
+                    📎
+                    <a class="text-decoration-none text-info" href="{{ publication.link }}" target="_blank">{{ publication.link }}</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+</section>
+{% endif %}

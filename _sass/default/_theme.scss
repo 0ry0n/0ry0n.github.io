@@ -1,0 +1,56 @@
+/**
+ * Fonts
+ */
+body {
+    font-family: 'Overlock', cursive;
+}
+
+/**
+ * Accordion
+ */
+.accordion-button:focus {
+    color: inherit;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: inherit;
+}
+
+/**
+ * Post
+ */
+#main-post {
+    a {
+        color: var(--bs-gray);
+    }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    color: var(--bs-white);
+    font-size: 0.9375rem;
+    border: 2px solid;
+    border-color: var(--bs-primary);
+    border-radius: 3px;
+    background-color: var(--bs-dark);
+}
+ 
+code {
+    padding: 1px 5px;
+}
+ 
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

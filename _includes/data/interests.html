@@ -1,0 +1,22 @@
+{% assign interests = site.data.data.interests %}
+{% if interests %}
+<section>
+    <div class="container-fluid">
+        <ul class="list-group list-group-flush">
+            {% for interest in interests %}
+            <li class="list-group-item bg-white">
+                {% if interest.link %}
+                <a class="text-decoration-none text-info" href="{{ interest.link }}" target="_blank">{{ interest.item }}</a>
+                {% else %}
+                {{ interest.item }}
+                {% endif %}
+
+                {% if interest.info %}
+                <span>{{ interest.info }}</span>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}

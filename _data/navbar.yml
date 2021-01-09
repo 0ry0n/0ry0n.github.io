@@ -1,0 +1,23 @@
+menu:
+  navbrand: no
+
+  items:
+    - title: Home
+      url: /
+
+    - title: Projects
+      url: /projects/
+
+    - title: Curriculum
+      url: /cv/
+
+    - title: About
+      url: /about/
+
+site-lang:
+#  - item: it
+#    image: 🇮🇹
+#  - item: en
+#    image: 🇬🇧
+
+site-theme: yes

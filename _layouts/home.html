@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="container-fluid">
+
+    <div>
+        {%- if site.posts.size > 0 -%}
+        <ul class="list-group list-group-flush">
+            {%- for post in site.posts -%}
+            <li class="list-group-item pb-5 mt-5 bg-white">
+                <div class="container-fluid">
+                    <p class="h2">{{ post.title | escape }}</p>
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <span>{{ post.last-update | date: date_format }}</span>
+                    <p class="h6 my-4">{{ post.intro }}</p>
+                    <a class="btn btn-primary" href="{{ post.url | relative_url }}">Continue reading</a>
+                </div>
+            </li>
+            {%- endfor -%}
+        </ul>
+        {%- endif -%}
+    </div>
+  
+</section>
+
+<section>
+    {{ content }}
+</section>

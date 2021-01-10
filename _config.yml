@@ -9,3 +9,4 @@ url: "https://0ry0n.github.io"
 # Build settings
 plugins:
   - jekyll-feed
+  - jemoji

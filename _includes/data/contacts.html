@@ -5,28 +5,28 @@
         <ul class="list-group list-group-flush">
             {% if contacts.location %}
             <li class="list-group-item bg-white">
-                📍
+                :round_pushpin:
                 <a class="text-decoration-none ms-2 text-info" href="https://www.google.com/maps/search/?api=1&query={{ contacts.location }}" target="_blank">{{ contacts.location }}</a>
             </li>
             {% endif %}
             
             {% if contacts.email %}
             <li class="list-group-item bg-white">
-                ✉️
+                :envelope:
                 <a class="text-decoration-none ms-2 text-info" href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
             </li>
             {% endif %}
         
             {% if contacts.phone %}
             <li class="list-group-item bg-white">
-                📞
+                :telephone_receiver:
                 <a class="text-decoration-none ms-2 text-info" href="tel:{{ contacts.phone }}">{{ contacts.phone }}</a>
             </li>
             {% endif %}
 
             {% if contacts.website %}
             <li class="list-group-item bg-white">
-                🌐
+                :globe_with_meridians:
                 <a class="text-decoration-none ms-2 text-info" href="https://{{ contacts.website }}" target="_blank">{{ contacts.website }}</a>
             </li>
             {% endif %}

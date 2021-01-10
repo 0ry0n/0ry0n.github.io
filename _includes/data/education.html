@@ -6,14 +6,14 @@
             <div class="card p-3 my-2 bg-light">
                 <div class="row">
                     <p class="h3 my-auto">
-                        🧑‍🎓
+                        :mortar_board:
                         {{ graduation.degree }}
                     </p>
                 </div>
                 {% if graduation.university %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        📍
+                        :round_pushpin:
                         {% if graduation.link %}
                         <a class="text-decoration-none text-info" href="{{ graduation.link }}" target="_blank">{{ graduation.university }}</a>
                         {% else %}
@@ -25,7 +25,7 @@
                 {% if graduation.time %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        ⌛️
+                        :hourglass:
                         {{ graduation.time }}
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                 {% if graduation.info %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        ℹ️
+                        :information_source:
                         {{ graduation.info }}
                     </div>
                 </div>

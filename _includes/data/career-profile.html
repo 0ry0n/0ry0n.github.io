@@ -9,14 +9,14 @@
             <div class="card p-3 my-2 bg-light">
                 <div class="row">
                     <p class="h3 my-auto">
-                        👔
+                        :necktie:
                         {{ role.role }}
                     </p>
                 </div>
                 {% if role.company %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        🏢
+                        :office:
                         {% if role.link %}
                         <a class="text-decoration-none text-info" href="{{ role.link }}" target="_blank">{{ role.company }}</a>
                         {% else %}
@@ -28,7 +28,7 @@
                 {% if role.location %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        📍
+                        :round_pushpin:
                         {{ role.location }}
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 {% if role.time %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        ⌛️
+                        :hourglass:
                         {{ role.time }}
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 {% if role.summery %}
                 <div class="row mt-1">
                     <div class="my-auto">
-                        ℹ️
+                        :information_source:
                         {{ role.summary }}
                     </div>
                 </div>

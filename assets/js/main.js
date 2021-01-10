@@ -16,21 +16,25 @@ $( document ).ready(function() {
     const theme = localStorage.getItem('theme');
     var isDark = false;
 
+    // Moon
+    const gibbous = '<img class="emoji" title=":waning_gibbous_moon:" alt=":waning_gibbous_moon:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f316.png" width="20" height="20">'
+    const crescent = '<img class="emoji" title=":waning_crescent_moon:" alt=":waning_crescent_moon:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f318.png" width="20" height="20">'
+
     if (theme === null || theme === 'dark') {
         toDark();
-        $( '#btn-theme' ).html("🌘");
+        $( '#btn-theme' ).html(crescent);
         isDark = true;
     };
 
     $( '#btn-theme' ).click(function() {
         if (isDark) {
             toLight();
-            $(this).html("🌖");
+            $(this).html(gibbous);
             isDark = false;
             localStorage.setItem('theme', 'light');
         } else {
             toDark();
-            $(this).html("🌘");
+            $(this).html(crescent);
             isDark = true;
             localStorage.setItem('theme', 'dark');
         }

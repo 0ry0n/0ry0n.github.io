@@ -20,11 +20,11 @@ social:
 languages:
   - idiom: Italiano
     level: Nativo
-    image: 🇮🇹
+    image: ":it:"
 
   - idiom: Inglese
     level: B1
-    image: 🇬🇧
+    image: ":gb:"
 
 interests:
   - item: Fai-Da-Te

@@ -16,8 +16,8 @@ menu:
 
 site-lang:
 #  - item: it
-#    image: 🇮🇹
+#    image: ":it:"
 #  - item: en
-#    image: 🇬🇧
+#    image: ":gb:"
 
 site-theme: yes

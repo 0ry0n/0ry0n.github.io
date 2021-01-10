@@ -6,14 +6,14 @@
         <div class="card p-3 my-2 bg-light">
             <div class="row">
                 <p class="h3 my-auto">
-                    📜
+                    :book:
                     {{ publication.title }}
                 </p>
             </div>
             {% if publication.description %}
             <div class="row mt-1">
                 <div class="my-auto">
-                    📖
+                    :memo:
                     {{ publication.description }}
                 </div>
             </div>
@@ -21,7 +21,7 @@
             {% if publication.authors %}
             <div class="row mt-1">
                 <div class="my-auto">
-                    🧑‍💼
+                    :black_nib:
                     {{ publication.authors }}
                 </div>
             </div>
@@ -29,7 +29,7 @@
             {% if publication.conference %}
             <div class="row mt-1">
                 <div class="my-auto">
-                    🏢
+                    :office:
                     {{ publication.conference }}
                 </div>
             </div>
@@ -37,7 +37,7 @@
             {% if publication.link %}
             <div class="row mt-1">
                 <div class="my-auto">
-                    📎
+                    :paperclip:
                     <a class="text-decoration-none text-info" href="{{ publication.link }}" target="_blank">{{ publication.link }}</a>
                 </div>
             </div>
